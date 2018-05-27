@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.musical.MusicalPageController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="145.0" layoutY="33.0" prefHeight="44.0" prefWidth="193.0" text="musical name">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="104.0" text="Musical Details">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="137.0" text="Musical" />
+      <Label layoutX="104.0" layoutY="166.0" text="Music" />
+      <Label layoutX="36.0" layoutY="230.0" text="Recording Details">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="109.0" layoutY="264.0" text="Date" />
+      <Label alignment="CENTER_RIGHT" layoutX="74.0" layoutY="292.0" text="Language" />
+      <Label alignment="CENTER_RIGHT" layoutX="90.0" layoutY="320.0" text="Theater" />
+      <Label alignment="CENTER_RIGHT" layoutX="88.0" layoutY="347.0" text="Director" />
+      <Label alignment="CENTER_RIGHT" layoutX="73.0" layoutY="374.0" text="Performer" />
+      <Button layoutX="398.0" layoutY="442.0" mnemonicParsing="false" text="Like" />
+   </children>
+</AnchorPane>

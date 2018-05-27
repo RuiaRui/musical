@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="452.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.musicals.MusicalsPageController">
+   <children>
+      <TableView layoutX="10.0" layoutY="32.0" prefHeight="341.0" prefWidth="597.0">
+        <columns>
+          <TableColumn fx:id="musicalColumn" prefWidth="84.99998474121094" text="Musical" />
+            <TableColumn fx:id="dateColumn" prefWidth="56.0" text="Date" />
+            <TableColumn fx:id="languageColumn" prefWidth="89.0" text="Language" />
+            <TableColumn fx:id="musicColumn" prefWidth="91.0" text="Music" />
+            <TableColumn fx:id="directorColumn" prefWidth="84.0" text="Director" />
+            <TableColumn fx:id="performerColumn" prefWidth="94.0" text="Performer" />
+            <TableColumn fx:id="theaterColumn" prefWidth="95.0" text="Theater" />
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="415.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="30.0" prefWidth="62.0" text="Back" />
+      <Button layoutX="477.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleMe" prefHeight="30.0" prefWidth="62.0" text="Me" />
+      <Button layoutX="539.0" layoutY="392.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="62.0" text="Help" />
+      <Button layoutX="14.0" layoutY="392.0" mnemonicParsing="false" text="Like" />
+   </children>
+</AnchorPane>
