@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="512.0" prefWidth="593.0" styleClass="page9" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.search.SearchPageController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane fx:id="backBtn" prefHeight="516.0" prefWidth="574.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <children>
+                <TextField fx:id="searchContent" layoutX="37.0" layoutY="202.0" prefHeight="30.0" prefWidth="412.0" />
+                <RadioButton fx:id="musicalBtn" layoutX="55.0" layoutY="258.0" mnemonicParsing="false" selected="false" text="Musical">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="searchGroup" />
+                    </toggleGroup></RadioButton>
+                <RadioButton fx:id="venueBtn" layoutX="214.0" layoutY="258.0" mnemonicParsing="false" text="Venue" toggleGroup="$searchGroup" />
+                <Button fx:id="searchBtn" layoutX="461.0" layoutY="202.0" mnemonicParsing="false" onAction="#showSearchResultView" prefHeight="30.0" prefWidth="99.0" text="Search" />
+                <RadioButton fx:id="dateBtn" layoutX="367.0" layoutY="258.0" mnemonicParsing="false" text="Date" toggleGroup="$searchGroup" />
+                <Label fx:id="wrongLabel" layoutX="96.0" layoutY="357.0" textFill="#e80d0d" />
+                <Label fx:id="infoLabel" layoutX="46.0" layoutY="105.0" />
+            <Label fx:id="lblClose" layoutX="560.0" onMouseClicked="#handleExit" onMousePressed="#handleExit" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="24.0" onMousePressed="#handleHelp" pickOnBounds="true" preserveRatio="true" x="525.0">
+               <image>
+                  <Image url="@../../../img/trust.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="490.0" onMousePressed="#handleMe" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/toys.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="3.0" layoutY="3.0" onMousePressed="#handleBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/back.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

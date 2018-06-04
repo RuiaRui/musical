@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="605.0" prefWidth="851.0" styleClass="page8" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.rank.RankPageController">
+    <children>
+        <TableView fx:id="rankTable" layoutY="38.0" prefHeight="500.0" prefWidth="861.0">
+            <columns>
+                <TableColumn fx:id="rankColumn" prefWidth="75.0" text="Rank" />
+                <TableColumn fx:id="musicalidColumn" prefWidth="83.0" text="Musicalid" visible="false" />
+                <TableColumn fx:id="musicalnameColumn" prefWidth="116.0" text="MusicalName" />
+                <TableColumn fx:id="opendateColumn" prefWidth="109.0" text="OpenDate" />
+                <TableColumn fx:id="colsedateColumn" prefWidth="108.0" text="CloseDate" />
+                <TableColumn fx:id="pronumColumn" prefWidth="116.0" text="ProNum" />
+                <TableColumn fx:id="comentColumn" prefWidth="173.0" text="Coment" />
+                <TableColumn fx:id="locationColumn" minWidth="0.0" prefWidth="163.0" text="Location" />
+            </columns>
+        </TableView>
+        <Button fx:id="detailBtn" layoutX="129.0" layoutY="554.0" mnemonicParsing="false" onAction="#handleShowDetails" prefHeight="30.0" prefWidth="109.0" text="Details" />
+        <Label fx:id="wrongLabel" layoutX="18.0" layoutY="368.0" />
+        <Button fx:id="likeBtn" layoutX="14.0" layoutY="554.0" mnemonicParsing="false" onAction="#handleLike" prefHeight="30.0" prefWidth="109.0" text="Like" />
+      <Label fx:id="lblClose" layoutX="835.0" layoutY="3.0" onMouseClicked="#handleExit" onMousePressed="#handleExit" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="774.0" layoutY="3.0" onMousePressed="#handleMe" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/toys.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="803.0" layoutY="2.0" onMousePressed="#handleHelp" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/trust.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="14.0" layoutY="14.0" onMousePressed="#handleBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="744.0" layoutY="3.0" onMousePressed="#handleCut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/save.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

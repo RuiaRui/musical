@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="456.0" prefWidth="743.0" styleClass="page10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.search.SearchResultController">
+   <children>
+      <TableView fx:id="resultTable" layoutY="36.0" prefHeight="336.0" prefWidth="743.0">
+        <columns>
+            <TableColumn fx:id="musicalColumn" prefWidth="123.0" text="Musical" />
+            <TableColumn fx:id="dateColumn" prefWidth="48.0" text="Date" />
+            <TableColumn fx:id="venueColumn" prefWidth="100.0" text="Venue" />
+            <TableColumn fx:id="bookColumn" prefWidth="109.0" text="Book" />
+            <TableColumn fx:id="notesColumn" prefWidth="122.0" text="Notes" />
+            <TableColumn fx:id="referenceColumn" prefWidth="121.0" text="Reference" />
+        </columns>
+      </TableView>
+       <Label fx:id="label_wrong" layoutX="43.0" layoutY="428.0" textFill="#ee1111" />
+       <Button layoutX="43.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleLike" prefHeight="38.0" prefWidth="94.0" text="Like" />
+       <Button layoutX="144.0" layoutY="392.0" mnemonicParsing="false" onAction="#handleShowDetails" prefHeight="38.0" prefWidth="113.0" text="Details" />
+      <Label fx:id="lblClose" layoutX="711.0" layoutY="3.0" onMouseClicked="#handleExit" onMousePressed="#handleExit" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="3.0" layoutY="3.0" onMousePressed="#handleBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="24.0" layoutX="643.0" layoutY="3.0" onMousePressed="#handleMe" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/toys.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="150.0" layoutY="2.0" onMousePressed="#handleHelp" pickOnBounds="true" preserveRatio="true" x="525.0">
+         <image>
+            <Image url="@../../../img/trust.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="22.0" layoutX="613.0" layoutY="4.0" onMousePressed="#handleCut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/save.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

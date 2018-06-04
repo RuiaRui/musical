@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="391.0" prefWidth="472.0" styleClass="page2" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.help.HelpPageController">
+    <children>
+      <Label fx:id="lblClose" layoutX="444.0" layoutY="14.0" onMouseClicked="#handleExit" onMousePressed="#handleExit" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="43.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After entering the system, you can do these things:" wrappingWidth="376.30029296875" />
+      <Text fill="WHITE" layoutX="43.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. In the user overview page, you can browser all    the musicals by clicking Musical button, search    musicals by clicking Search button, see your like    list by clicking Faavorite button and see rank by   clicking Rank button." textAlignment="JUSTIFY" wrappingWidth="385.30029970407486" />
+      <Text fill="WHITE" layoutX="43.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. In the musiclas list page, you can see all the    musicals, click the row and then click the like    button to add it to your like list or click details    button to see the details of the musicals." textAlignment="JUSTIFY" wrappingWidth="385.30029970407486" />
+      <Text fill="WHITE" layoutX="43.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. In the search page, you can choose search by   musicals or date or theator by clicking the button,   and then click search to see the result." textAlignment="JUSTIFY" wrappingWidth="385.30029970407486" />
+      <Text fill="#f4f4f4" layoutX="43.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. In the homePage, you can edit your password." textAlignment="JUSTIFY" wrappingWidth="385.30029970407486" />
+      <Text fill="WHITE" layoutX="43.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. In the My Likes Page, you can also choose a row   to see details or delete it from your like list." textAlignment="JUSTIFY" wrappingWidth="385.30029970407486" />
+    </children>
+</AnchorPane>
